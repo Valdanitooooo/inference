@@ -819,7 +819,7 @@
           "none"
         ],
         "model_id": "THUDM/glm-4-9b-chat",
-        "model_revision": "76f3474a854145aa4a9ed2612fee9bc8d4a8966b"
+        "model_revision": "aae8bd74af5c6dff63a49d7fbdcc89349ebf87aa"
       },
       {
         "model_format": "ggufv2",
@@ -890,7 +890,7 @@
           "none"
         ],
         "model_id": "THUDM/glm-4-9b-chat-1m",
-        "model_revision": "715ddbe91082f976ff6a4ca06d59e5bbff6c3642"
+        "model_revision": "0aa722c7e0745dd21453427dd44c257dd253304f"
       },
       {
         "model_format": "ggufv2",
@@ -1797,6 +1797,16 @@
           "none"
         ],
         "model_id": "meta-llama/Meta-Llama-3.1-70B"
+      },
+      {
+        "model_format": "pytorch",
+        "model_size_in_billions": 405,
+        "quantizations": [
+          "4-bit",
+          "8-bit",
+          "none"
+        ],
+        "model_id": "meta-llama/Meta-Llama-3.1-405B"
       }
     ]
   },
@@ -1975,6 +1985,32 @@
           "none"
         ],
         "model_id": "mlx-community/Meta-Llama-3.1-70B-Instruct-bf16"
+      },
+      {
+        "model_format": "pytorch",
+        "model_size_in_billions": 405,
+        "quantizations": [
+          "4-bit",
+          "8-bit",
+          "none"
+        ],
+        "model_id": "meta-llama/Meta-Llama-3.1-405B-Instruct"
+      },
+      {
+        "model_format": "gptq",
+        "model_size_in_billions": 405,
+        "quantizations": [
+          "Int4"
+        ],
+        "model_id": "hugging-quants/Meta-Llama-3.1-405B-Instruct-GPTQ-INT4"
+      },
+      {
+        "model_format": "awq",
+        "model_size_in_billions": 405,
+        "quantizations": [
+          "Int4"
+        ],
+        "model_id": "hugging-quants/Meta-Llama-3.1-405B-Instruct-AWQ-INT4"
       }
     ],
     "prompt_style": {
@@ -2947,6 +2983,46 @@
           "Int4"
         ],
         "model_id": "Qwen/Qwen2-72B-Instruct-AWQ"
+      },
+      {
+        "model_format": "fp8",
+        "model_size_in_billions": "0_5",
+        "quantizations": [
+          "fp8"
+        ],
+        "model_id": "neuralmagic/Qwen2-0.5B-Instruct-FP8"
+      },
+      {
+        "model_format": "fp8",
+        "model_size_in_billions": "0_5",
+        "quantizations": [
+          "fp8"
+        ],
+        "model_id": "neuralmagic/Qwen2-0.5B-Instruct-FP8"
+      },
+      {
+        "model_format": "fp8",
+        "model_size_in_billions": "1_5",
+        "quantizations": [
+          "fp8"
+        ],
+        "model_id": "neuralmagic/Qwen2-1.5B-Instruct-FP8"
+      },
+      {
+        "model_format": "fp8",
+        "model_size_in_billions": 7,
+        "quantizations": [
+          "fp8"
+        ],
+        "model_id": "neuralmagic/Qwen2-7B-Instruct-FP8"
+      },
+      {
+        "model_format": "fp8",
+        "model_size_in_billions": 72,
+        "quantizations": [
+          "fp8"
+        ],
+        "model_id": "neuralmagic/Qwen2-72B-Instruct-FP8"
       },
       {
         "model_format": "mlx",
@@ -6590,12 +6666,30 @@
     "model_specs": [
       {
         "model_format": "pytorch",
+        "model_size_in_billions": "1_8",
+        "quantizations": [
+          "none"
+        ],
+        "model_id": "internlm/internlm2_5-1_8b-chat",
+        "model_revision": "4426f00b854561fa60d555d2b628064b56bcb758"
+      },
+      {
+        "model_format": "pytorch",
         "model_size_in_billions": 7,
         "quantizations": [
           "none"
         ],
         "model_id": "internlm/internlm2_5-7b-chat",
         "model_revision": "9dc8536a922ab4954726aad1b37fa199004a291a"
+      },
+      {
+        "model_format": "pytorch",
+        "model_size_in_billions": 20,
+        "quantizations": [
+          "none"
+        ],
+        "model_id": "internlm/internlm2_5-20b-chat",
+        "model_revision": "ef17bde929761255fee76d95e2c25969ccd93b0d"
       },
       {
         "model_format": "gptq",
@@ -6605,6 +6699,23 @@
         ],
         "model_id": "ModelCloud/internlm-2.5-7b-chat-gptq-4bit",
         "model_revision": "2e2dda735c326544921a4035bbeb6c6e316a8254"
+      },
+      {
+        "model_format": "ggufv2",
+        "model_size_in_billions": "1_8",
+        "quantizations": [
+          "q2_k",
+          "q3_k_m",
+          "q4_0",
+          "q4_k_m",
+          "q5_0",
+          "q5_k_m",
+          "q6_k",
+          "q8_0",
+          "fp16"
+        ],
+        "model_id": "internlm/internlm2_5-1_8b-chat-gguf",
+        "model_file_name_template": "internlm2_5-1_8b-chat-{quantization}.gguf"
       },
       {
         "model_format": "ggufv2",
@@ -6622,6 +6733,23 @@
         ],
         "model_id": "internlm/internlm2_5-7b-chat-gguf",
         "model_file_name_template": "internlm2_5-7b-chat-{quantization}.gguf"
+      },
+      {
+        "model_format": "ggufv2",
+        "model_size_in_billions": 20,
+        "quantizations": [
+          "q2_k",
+          "q3_k_m",
+          "q4_0",
+          "q4_k_m",
+          "q5_0",
+          "q5_k_m",
+          "q6_k",
+          "q8_0",
+          "fp16"
+        ],
+        "model_id": "internlm/internlm2_5-20b-chat-gguf",
+        "model_file_name_template": "internlm2_5-20b-chat-{quantization}.gguf"
       },
       {
         "model_format": "mlx",
@@ -6771,7 +6899,7 @@
   },
   {
     "version":1,
-    "context_length":2048,
+    "context_length":8192,
     "model_name":"MiniCPM-Llama3-V-2_5",
     "model_lang":[
       "en",
@@ -6808,6 +6936,52 @@
       "roles":[
         "user",
         "assistant"
+      ]
+    }
+  },
+  {
+    "version":1,
+    "context_length":32768,
+    "model_name":"MiniCPM-V-2.6",
+    "model_lang":[
+      "en",
+      "zh"
+    ],
+    "model_ability":[
+      "chat",
+      "vision"
+    ],
+    "model_description":"MiniCPM-V 2.6 is the latest model in the MiniCPM-V series. The model is built on SigLip-400M and Qwen2-7B with a total of 8B parameters.",
+    "model_specs":[
+      {
+        "model_format":"pytorch",
+        "model_size_in_billions":8,
+        "quantizations":[
+          "none"
+        ],
+        "model_id":"openbmb/MiniCPM-V-2_6",
+        "model_revision":"3f7a8da1b7a8b928b5ee229fae33cf43fd64cf31"
+      },
+      {
+        "model_format":"pytorch",
+        "model_size_in_billions":8,
+        "quantizations":[
+          "4-bit"
+        ],
+        "model_id":"openbmb/MiniCPM-V-2_6-int4",
+        "model_revision":"051e2df6505f1fc4305f2c9bd42ed90db8bf4874"
+      }
+    ],
+    "prompt_style":{
+      "style_name":"QWEN",
+      "system_prompt":"You are a helpful assistant",
+      "roles":[
+        "user",
+        "assistant"
+      ],
+      "stop": [
+        "<|im_end|>",
+        "<|endoftext|>"
       ]
     }
   },
@@ -7062,6 +7236,16 @@
     "model_specs": [
       {
         "model_format": "pytorch",
+        "model_size_in_billions": 2,
+        "quantizations": [
+          "none",
+          "4-bit",
+          "8-bit"
+        ],
+        "model_id": "google/gemma-2-2b-it"
+      },
+      {
+        "model_format": "pytorch",
         "model_size_in_billions": 9,
         "quantizations": [
           "none",
@@ -7079,6 +7263,23 @@
           "8-bit"
         ],
         "model_id": "google/gemma-2-27b-it"
+      },
+      {
+        "model_format": "ggufv2",
+        "model_size_in_billions": 2,
+        "quantizations": [
+          "Q3_K_L",
+          "Q4_K_M",
+          "Q4_K_S",
+          "Q5_K_M",
+          "Q5_K_S",
+          "Q6_K",
+          "Q6_K_L",
+          "Q8_0",
+          "f32"
+        ],
+        "model_id": "bartowski/gemma-2-2b-it-GGUF",
+        "model_file_name_template": "gemma-2-2b-it-{quantization}.gguf"
       },
       {
         "model_format": "ggufv2",
@@ -7125,6 +7326,30 @@
         ],
         "model_id": "bartowski/gemma-2-27b-it-GGUF",
         "model_file_name_template": "gemma-2-27b-it-{quantization}.gguf"
+      },
+      {
+        "model_format": "mlx",
+        "model_size_in_billions": 2,
+        "quantizations": [
+          "4-bit"
+        ],
+        "model_id": "mlx-community/gemma-2-2b-it-4bit"
+      },
+      {
+        "model_format": "mlx",
+        "model_size_in_billions": 2,
+        "quantizations": [
+          "8-bit"
+        ],
+        "model_id": "mlx-community/gemma-2-2b-it-8bit"
+      },
+      {
+        "model_format": "mlx",
+        "model_size_in_billions": 2,
+        "quantizations": [
+          "None"
+        ],
+        "model_id": "mlx-community/gemma-2-2b-it"
       },
       {
         "model_format": "mlx",
